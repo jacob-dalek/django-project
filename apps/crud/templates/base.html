@@ -1,5 +1,5 @@
 {% load django_htmx %}
-
+ 
 <!doctype html>
 <html lang="en">
     <head>
@@ -12,11 +12,9 @@
     </head>
     <body hx-headers='{"x-csrftoken": "{{ csrf_token }}"}'></body>
     {% include './components/navbar.html' %}
+
     <body>
 
-        <h1 class="text-10xl font-bold underline">
-      Hello world!
-    </h1>
 
         {% block content %}
         
