@@ -4,7 +4,11 @@
 
 {% block content %}
 
-<img src="{% static 'tink_images/PXL_20250723_112047224.jpg' %}" alt="My image">
+{% for image in tink_images %}
+    <img src="{% static 'tink_images/' %}{{image}}" alt="not loaded :/ ">
+    {{image}}
+{% endfor %}
+
 
 
 {% endblock %}
